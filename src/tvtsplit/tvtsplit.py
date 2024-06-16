@@ -1,6 +1,6 @@
 import polars as pl
 
-@pl.api.register_dataframe_namespace("tvt_split")
+@pl.api.register_dataframe_namespace("tvtsplit")
 class Shuffle_tvt_split:
     def __init__(
         self,
@@ -102,17 +102,17 @@ class Shuffle_tvt_split:
             "test": self.test(params),
         }
     
-def test_TVTsplit():
+# def test_TVTsplit():
 
-    params = {"shuffle": False, "seed": 0, "val_size": 0.25, "test_size": 0.25}
-    sample_df = pl.DataFrame(
-        data=["aaa", "bbb", "ccc", "ddd", "eee", "fff"],
-        schema=[("txt", pl.String)],
-    )
+#     params = {"shuffle": False, "seed": 0, "val_size": 0.25, "test_size": 0.25}
+#     sample_df = pl.DataFrame(
+#         data=["aaa", "bbb", "ccc", "ddd", "eee", "fff"],
+#         schema=[("txt", pl.String)],
+#     )
 
-    print(sample_df.tvt_split.train(params))
-    print(sample_df.tvt_split.val(params))
-    print(sample_df.tvt_split.test(params))
+#     print(sample_df.tvt_split.train(params))
+#     print(sample_df.tvt_split.val(params))
+#     print(sample_df.tvt_split.test(params))
 
 # if __name__ == "__main__":
 #     #main()
