@@ -26,6 +26,15 @@ classifiers = [
 ]
 dependencies = ["polars"]
 
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "flake8",
+    "mypy",
+    "black",
+    "isort"
+]
+
 [project.urls]
 Documentation = "https://github.com/U.N. Owen/tvtsplit#readme"
 Issues = "https://github.com/U.N. Owen/tvtsplit/issues"
