@@ -29,6 +29,7 @@ dependencies = ["polars"]
 [project.optional-dependencies]
 dev = [
     "hatch",
+    "twine",
 ]
 
 [project.urls]
