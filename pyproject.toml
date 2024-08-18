@@ -11,7 +11,7 @@ requires-python = ">=3.8"
 license = "MIT"
 keywords = []
 authors = [
-  { name = "U.N. Owen", email = "void@some.where" },
+  { name = "Minato Hatakeyama", email = "tianshanminato965@gmail.com" },
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -26,10 +26,16 @@ classifiers = [
 ]
 dependencies = ["polars"]
 
+[project.optional-dependencies]
+dev = [
+    "hatch",
+    "twine",
+]
+
 [project.urls]
-Documentation = "https://github.com/U.N. Owen/tvtsplit#readme"
-Issues = "https://github.com/U.N. Owen/tvtsplit/issues"
-Source = "https://github.com/U.N. Owen/tvtsplit"
+Documentation = "https://github.com/anyumuenyumuboto/tvtsplit#readme"
+Issues = "https://github.com/anyumuenyumuboto/tvtsplit/issues"
+Source = "https://github.com/anyumuenyumuboto/tvtsplit"
 
 [tool.hatch.version]
 path = "src/tvtsplit/__about__.py"
@@ -38,6 +44,11 @@ path = "src/tvtsplit/__about__.py"
 extra-dependencies = [
   "mypy>=1.0.0",
 ]
+
+[tool.hatch.envs.tests]
+extra-dependencies = [
+]
+
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/tvtsplit tests}"
 
