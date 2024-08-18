@@ -1,6 +1,14 @@
 #!/bin/bash
 # https://test.pypi.org/project/tvtsplit/0.0.1/
 
+# Run in the directory containing this file
+CULLENT_FILEDIR=$(
+    cd "$(dirname "${0}")" || exit
+    pwd
+)
+cd "$CULLENT_FILEDIR" || exit
+
+
 # pypiへのアップロードツールのtwineをインストール
 pip install twine
 
