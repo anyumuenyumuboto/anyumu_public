@@ -14,5 +14,6 @@ pip install polars
 pip install --index-url https://test.pypi.org/simple/ tvtsplit==0.0.1
 
 # testpypiからダウンロードするとき、pypiに登録済みのパッケージの場合は以下も使えるかも
+# 登録済みでなくても使えるかも
 python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ tvtsplit
 
