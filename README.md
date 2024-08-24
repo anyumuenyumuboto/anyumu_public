@@ -5,6 +5,8 @@
 
 -----
 
+Split polars DataFrame into training data, validation data and test data.
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -14,6 +16,12 @@
 
 ```console
 pip install tvtsplit
+```
+
+## Usage
+
+```
+
 ```
 
 ## License

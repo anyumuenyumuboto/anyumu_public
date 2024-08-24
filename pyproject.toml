@@ -49,6 +49,12 @@ extra-dependencies = [
 extra-dependencies = [
 ]
 
+[tool.hatch.envs.docs]
+extra-dependencies = [
+  "sphinx",
+  "sphinx_material",
+]
+
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/tvtsplit tests}"
 
