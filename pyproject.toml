@@ -53,6 +53,7 @@ extra-dependencies = [
 extra-dependencies = [
   "sphinx",
   "sphinx_material",
+  "sphinx_rtd_theme",
 ]
 
 [tool.hatch.envs.types.scripts]

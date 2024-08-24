@@ -5,6 +5,9 @@ import polars as pl
 
 @pl.api.register_dataframe_namespace("tvtsplit")
 class TVTsplit:
+    """
+    docstring 試しに作った
+    """
     def __init__(
         self,
         df: pl.DataFrame,
