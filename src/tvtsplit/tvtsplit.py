@@ -13,7 +13,7 @@ class TVTsplit:
         self.df_length = df.select(pl.len()).item()
 
     def train_length(self, params: dict[str , bool | float] = None) -> int:
-
+# **param のように可変長キーワード引数として渡したい
         if params is None:
             params = {"shuffle": True, "seed": 0, "val_size": 0.25, "test_size": 0.25}
 
